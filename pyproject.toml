@@ -1,0 +1,22 @@
+[build-system]
+requires = ["hatchling", "hatch-requirements-txt"]
+build-backend = "hatchling.build"
+
+[tool.hatch.envs.default.env-vars]
+PIP_EXTRA_INDEX_URL = "https://download.pytorch.org/whl/cu118"
+
+[tool.hatch.metadata]
+allow-direct-references = true
+
+[project]
+name = "foundationpose"
+version = "0.0.1"
+dynamic = ["dependencies"]
+
+[tool.hatch.build]
+ignore-vcs = true
+include = ["**/*.py"]
+exclude = ["conftest.py", "*_test.py"]
+
+[tool.hatch.metadata.hooks.requirements_txt]
+files = ["requirements.txt"]

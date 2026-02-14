@@ -8,8 +8,8 @@ torchaudio==2.0.1+cu118
 
 
 # JupyterLab
-jupyterlab==4.1.5
-ipywidgets==8.1.2
+# jupyterlab==4.1.5
+# ipywidgets==8.1.2
 
 
 # Common Libraries
@@ -64,7 +64,7 @@ timm==0.9.16
 albumentations==1.4.2
 xatlas==0.0.9
 nodejs==0.1.1
-jupyterlab==4.1.5
+# jupyterlab==4.1.5
 objaverse==0.1.7
 g4f==0.2.7.1
 ultralytics==8.0.120
